@@ -1,17 +1,31 @@
-increaseBtn = document.getElementById("increaseBtn");
-decreaseBtn = document.getElementById("decreaseBtn");
-resetBtn = document.getElementById("resetBtn");
-countLabel = document.getElementById("countLabel");
-let count = 0;
-increaseBtn.onclick = function(){
-    count++;
-    countLabel.textContent = count;
+const myCheckBox=document.getElementById("myCheckBox");
+const visaBtn=document.getElementById("visaBtn");
+const masterCardBtn=document.getElementById("masterCardBtn");
+const payPalBtn=document.getElementById("payPalBtn");
+const submitBtn=document.getElementById("submitBtn");
+const subResult=document.getElementById("subResult");
+const paymentResult=document.getElementById("paymentResult");
+
+submitBtn.onclick = function(){
+      if(myCheckBox.checked){
+        subResult.textContent= "You are subscribed";
+      }
+      else {
+        subResult.textContent= "You are NOT subscribed!";
+      }
+
+      if(visaBtn.checked){
+        paymentResult.textContent="You are paying with Visa";
+      }
+      else if(masterCardBtn.checked){
+        paymentResult.textContent="You are paying with MasterCard";
+      }
+      else if(payPalBtn.checked){
+        paymentResult.textContent="You are paying with Paypal";
+      }
+      else {
+        paymentResult.textContent="Please use a payment method";
+      }
+
 }
-decreaseBtn.onclick = function(){
-    count--;
-    countLabel.textContent = count;
-}
-resetBtn.onclick = function(){
-    count = 0;
-    countLabel.textContent = count;
-}
+

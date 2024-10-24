@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IncreaseDecreaseReset</title>
+    <title>My Website</title>
     
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
     
-    <label id="countLabel"> 0</label>
-    <div id="btnContainer">
-        <button id="decreaseBtn" class="buttons">decrease</button>
-        <button id="resetBtn" class="buttons">reset</button>
-        <button id="increaseBtn" class="buttons">increase</button>
+   <input type="checkbox" id="myCheckBox">
+   <label for="myCheckBox">Subscribe</label><br><br>
+   <input type="radio" id="visaBtn" name="card">
+   <label for="visaBtn">Visa</label><br>
+   <input type="radio" id="masterCardBtn" name="card">
+   <label for="masterCardBtn">MasterCard</label><br>
+   <input type="radio" id="payPalBtn" name="card" >
+   <label for="payPalBtn">Paypal</label><br><br>
+   <button id="submitBtn">submit</button>
+   <p id="subResult"></p>
+   <p id="paymentResult"></p>
 
     </div>
     <script src="index.js"></script>
     
 </body>
 </html>
+
+
