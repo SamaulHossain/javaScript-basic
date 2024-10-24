@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Printing the Current Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextBox</title>
 </head>
 <body>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque expedita eaque nostrum! Vitae exercitationem amet, quibusdam ratione provident pariatur? Debitis deserunt maxime error facere odit inventore ex blanditiis dignissimos vitae.</p>
-  <button onclick="window.print()">Print</button>
+    <label id="mylabel">Enter your Name</label><br>
+    <input type="text" id="mytext"><br>
+    <button type="button" id="mybutton">Submit</button>
+   <script >
+    let username;
+document.getElementById("mybutton").onclick= function (){
+    username= document.getElementById("mytext").value;
+    console.log(username);
+    document.getElementById("mylabel").innerHTML= "Hello "+ username;
+}
+
+
+
+   </script> 
 </body>
 </html>
-
