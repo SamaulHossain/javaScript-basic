@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BulbOnOff by Button Click</title>
+  <title>Make element Visible by button</title>
 </head>
 <body>
-  
-  <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn Off Bulb</button>
-  <img id="myImage" src="pic_bulboff.gif" style="width: 200px;">
-  
-
-  <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn On Bulb</button> 
+  <p id="demo" style="display: none">I love Tania</p>
+  <button  onclick="document.getElementById('demo').style.display='block'">Click Me</button>
   
 </body>
 </html>
+
