@@ -1,29 +1,17 @@
 <!DOCTYPE html>
-<html>
-  
-    
- <style>
-    button{
-      background-color: #FFF5CD;
-      border-radius: 25px;
-      border: 1px solid #FFF5CD;
-      width: 150px;
-      font-size: 15px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      
-    }
-    *{
-      padding: 10px;
-      margin: 10px;
-    }
-  </style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BulbOnOff by Button Click</title>
+</head>
 <body>
+  
+  <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn Off Bulb</button>
+  <img id="myImage" src="pic_bulboff.gif" style="width: 200px;">
+  
 
-  <h2>What Can JavaScript Do?</h2>
-
-<p id="demo" ></p>
-
-<button type="button" onclick= 'document.getElementById("demo").innerHTML= "I Love Tania"'>Click Me </button>
-
+  <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn On Bulb</button> 
+  
 </body>
 </html>
