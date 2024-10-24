@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TextBox</title>
+    <title>IncreaseDecreaseReset</title>
+    
 </head>
 <body>
-    <label id="mylabel">Enter your Name</label><br>
-    <input type="text" id="mytext"><br>
-    <button type="button" id="mybutton">Submit</button>
-   <script >
-    let username;
-document.getElementById("mybutton").onclick= function (){
-    username= document.getElementById("mytext").value;
-    console.log(username);
-    document.getElementById("mylabel").innerHTML= "Hello "+ username;
-}
+    <link rel="stylesheet" href="style.css">
+    
+    <label id="countLabel"> 0</label>
+    <div id="btnContainer">
+        <button id="decreaseBtn" class="buttons">decrease</button>
+        <button id="resetBtn" class="buttons">reset</button>
+        <button id="increaseBtn" class="buttons">increase</button>
 
-
-
-   </script> 
+    </div>
+    <script src="index.js"></script>
+    
 </body>
 </html>
